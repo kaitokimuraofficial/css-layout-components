@@ -1,1 +1,12 @@
+# dependencies
+/node_modules
+/template
+
+# production
+/build
+
+# json file
+*.json
+
+# .txt
 *.txt

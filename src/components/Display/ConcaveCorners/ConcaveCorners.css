@@ -1,0 +1,44 @@
+:root {
+    --background-color: #d1d5db
+}
+.concave-corners {
+    background-color: var(--background-color);
+    position: relative;
+    height: 24rem;
+    width: 32rem;
+}
+
+.concave-corners-corner {
+    position: absolute;
+    background-color: #fff;
+    height: 1rem;
+    width: 1rem;
+}
+
+.concave-corners-corner--tl {
+    top: 0;
+    left: 0;
+
+    border-radius: 0 0 1rem 0;
+}
+
+.concave-corners-corner--tr {
+    top: 0;
+    right: 0;
+
+    border-radius: 0 0 0 1rem;
+}
+
+.concave-corners-corner--bl {
+    bottom: 0;
+    left: 0;
+
+    border-radius: 0 1rem 0 0;
+}
+
+.concave-corners-corner--br {
+    bottom: 0;
+    right: 0;
+    
+    border-radius: 1rem 0 0 0;
+}

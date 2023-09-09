@@ -1,0 +1,21 @@
+:root {
+    --background-color: #d1d5db;
+}
+
+body {
+    height: 24rem;
+}
+.curved-background {
+    border: 1px solid var(--background-color);
+    border-radius: 0.25rem;
+    height: 100%;
+    width: 100%;
+}
+.curved-background-curved {
+    background-color: var(--background-color);
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 70% 40%;
+
+    height: 12rem;
+    width: 100%;
+}

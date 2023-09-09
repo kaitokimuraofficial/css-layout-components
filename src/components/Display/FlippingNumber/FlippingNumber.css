@@ -1,13 +1,7 @@
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-/* flipping-number */
-
 :root {
     --divider-height: 1px;
 }
+
 .flip {
     display: inline-flex;
     padding: 1rem;
@@ -16,6 +10,7 @@ body {
     border-radius: 0.5rem;
     overflow: hidden;
 }
+
 .flip::before {
     content: '';
     position: absolute;
@@ -27,6 +22,7 @@ body {
     border-bottom: var(--divider-height) solid rgb(148 163 184);
     transform: translateY(calc(-1 * var(--divider-height)));
 }
+
 .flip::after {
     content: '';
     position: absolute;
@@ -37,23 +33,9 @@ body {
     background: linear-gradient(to right bottom, rgb(100 116 139), rgb(15 23 42));
 }
 
-.flipping-number {
+.flip-number {
     color: #fff;
     font-size: 4rem;
     font-weight: 600;
     z-index: 1;
 }
-
-/* frame-corners */
-
-:root {
-    --frame-border-size: 0.25rem;
-    --frame-height: 1rem;
-    --frame-width: 1rem;
-}
-
-.box {
-    border: var(--frame-border-size) solid rgb(30 41 59);
-    padding: var(--frame-height) var(--frame-width);
-}
-

@@ -1,0 +1,19 @@
+.box {
+    height: 12rem;
+    width: 16rem;
+
+    background: linear-gradient(-135deg, transparent, rgb(226 232 240) 0);
+    position: relative;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    background: linear-gradient(to left bottom, transparent 50%, rgb(100 116 139) 0) no-repeat 100% 0;
+    box-shadow: -0.4rem 0.4rem 0.4rem -0.2rem rgba(0 0 0 / 50);
+}
