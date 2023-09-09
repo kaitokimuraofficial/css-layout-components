@@ -4,9 +4,13 @@
 
 # production
 /build
+*.DS_Store*
 
 # json file
 *.json
 
 # .txt
 *.txt
+
+# picture
+/images
