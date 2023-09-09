@@ -1,0 +1,46 @@
+:root {
+    --placeholder-size: 1rem;
+}
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.circle {
+    background-color: rgb(203 213 225);
+    border-radius: 9999px;
+    height: var(--placeholder-size);
+    width: var(--placeholder-size);
+    margin-right: 0.125rem;
+}
+.square {
+    background-color: rgb(203 213 225);
+    border-radius: 0.25rem;
+    height: var(--placeholder-size);
+    width: var(--placeholder-size);
+    margin: 0 0.125rem;
+}
+.container {
+    border: 1px solid rgb(203 213 225);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    width: 16rem;
+}
+
+.container-left,
+.container-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr repeat(1, auto) 1fr;
+}
+.container-left {
+    margin-right: auto;
+}
+.container-center {
+    grid-column-start: 2;
+}

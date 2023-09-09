@@ -1,0 +1,85 @@
+:root {
+    --color: #d1d5db;
+    --color-clicked: red;
+}
+
+.voting {
+    border: 1px solid var(--color);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+}
+
+.voting-number {
+    flex: 1;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    padding: 0.25rem;
+}
+
+.voting-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    height: 1rem;
+
+    position: relative;
+}
+
+.voting-triangle {
+    border-style: solid;
+
+    height: 0;
+    width: 0;
+}
+
+.voting-triangle--up {
+    border-color: transparent transparent var(--color);
+    border-width: 0 0.5rem 0.5rem;
+}
+
+.voting-triangle--up:active {
+    border-color: transparent transparent var(--color-clicked);
+    border-width: 0 0.5rem 0.5rem;
+}
+
+.voting-triangle--down {
+    border-color: var(--color) transparent transparent;
+    border-width: 0.5rem 0.5rem 0;
+}
+
+.voting-triangle--down:active {
+    border-color: var(--color) transparent transparent;
+    border-width: 0.5rem 0.5rem 0;
+}
+
+.flex-container {
+    display: flex;
+    background-color:
+        blueviolet;
+}
+
+.flex-item {
+    background-color:
+        skyblue;
+    margin: 10px;
+    padding: 50px 0;
+    width: 200px;
+}
+
+.item1 {
+    flex-shrink: 1;
+}
+
+.item2 {
+    flex-shrink: 0;
+}
