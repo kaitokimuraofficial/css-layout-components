@@ -4,6 +4,7 @@
 
 # production
 /build
+.DS_Store
 
 # json file
 *.json
