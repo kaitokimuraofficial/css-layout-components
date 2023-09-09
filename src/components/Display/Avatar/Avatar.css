@@ -1,0 +1,28 @@
+.avatar {
+    border-radius: 50%;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    height: 4rem;
+    width: 4rem;
+}
+
+.avatar-image {
+    height: 50%;
+    width: 50%;
+}
+
+.initial-avatar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background-color: #d1d5db;
+    color: #fff;
+
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}

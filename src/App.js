@@ -1,10 +1,11 @@
 import './App.css';
-import ColorSwatch from './components/Display/ColorSwatch/ColorSwatch';
+import Zigzag from './components/Display/Zigzag/Zigzag';
+
 
 function App() {
   return (
     <div className="App">
-      <ColorSwatch />
+      <Zigzag />
     </div>
   );
 }
