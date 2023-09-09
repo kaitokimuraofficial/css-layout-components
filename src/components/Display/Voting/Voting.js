@@ -1,15 +1,15 @@
 import React, {useState} from "react";
 import "./Voting.css";
 
-const Voting = () => {
+const Voting = (props) => {
     const [count, setCount] = useState(0)
 
     const countUp = () => {
-        setCount(Math.min(999, count+1));
+        setCount(Math.min(props.max, count+1));
     };
 
     const countDown = () => {
-        setCount(Math.max(0, count-1));
+        setCount(Math.max(props.min, count-1));
     };
 
     return (
