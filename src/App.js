@@ -1,11 +1,10 @@
 import './App.css';
-import Zigzag from './components/Display/Zigzag/Zigzag';
-
+import StatusLight from './components/Display/StatusLight/StatusLight';
 
 function App() {
   return (
     <div className="App">
-      <Zigzag />
+      <StatusLight />
     </div>
   );
 }
