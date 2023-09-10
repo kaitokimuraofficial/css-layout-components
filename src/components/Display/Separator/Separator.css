@@ -1,0 +1,44 @@
+.rectangle {
+    background: #d1d5db;
+    border-radius: 0.25rem;
+    height: var(--rectangle-height);
+    width: var(--rectangle-width);
+}
+
+
+.rectangle--hor.rectangle--100 {
+    --rectangle-width: 100%;
+}
+.rectangle--hor.rectangle--sm {
+    --rectangle-height: 0.5rem;
+}
+
+
+.separator {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    position: relative;
+
+    width: 20rem;
+}
+
+.separator__content {
+    background: #fff;
+
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 0 0.25rem;
+
+    width: 60%;
+}
+
+.separator__separator {
+    border-bottom: 1px solid #d1d5db;
+    height: 1px;
+    width: 100%;
+}
