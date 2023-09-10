@@ -1,10 +1,10 @@
 import './App.css';
-import StatusLight from './components/Display/StatusLight/StatusLight';
+import Spinner from './components/FeedBack/Spinner/Spinner';
 
 function App() {
   return (
     <div className="App">
-      <StatusLight />
+      <Spinner />
     </div>
   );
 }
