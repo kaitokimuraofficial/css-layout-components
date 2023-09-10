@@ -1,0 +1,7 @@
+.lined-paper {
+    background-image: linear-gradient(#d1d5db 1px, transparent 0px);
+    background-size: 100% 2em;
+
+    background-position-y: 1.5rem;
+    line-height: 2em;
+}

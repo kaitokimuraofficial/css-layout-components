@@ -1,10 +1,10 @@
 import './App.css';
-import FoldStructure from './components/Display/FoldStructure/FoldStructure';
+import Accordion from './components/Display/Accordion/Accordion';
 
 function App() {
   return (
     <div className="App">
-      <FoldStructure/>
+      <Accordion/>
     </div>
   );
 }
