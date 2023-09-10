@@ -1,0 +1,45 @@
+.timeline {
+    position: relative;
+}
+
+.timeline-line {
+    border-right: 2px solid #d1d5db;
+
+    left: 0.75rem;
+    position: absolute;
+    top: 0px;
+
+    height: 100%;
+}
+
+.timeline-items {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.timeline-item {
+    margin-bottom: 5rem;
+}
+
+.timeline-top {
+    align-items: center;
+    display: flex;
+}
+
+.timeline-circle {
+    background-color: #d1d5db;
+    border-radius: 9999px;
+
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.timeline-title {
+    flex: 1;
+    margin-left: 0.5rem;
+}
+
+.timeline-desc {
+    margin-left: 2rem;
+}

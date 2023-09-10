@@ -1,0 +1,55 @@
+:root {
+    --background-color: #d1d5db;
+}
+
+button {
+    border: transparent;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.accordion-item {
+    border: 1px solid var(--background-color);
+    border-radius: 1rem;
+}
+
+.accordion-header {
+    align-items: center;
+    display: flex;
+
+    cursor: pointer;
+    padding: 16px;
+}
+
+.accordion-toggle {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.accordion-title {
+    flex: 1;
+}
+
+.accordion-content {
+    border-top: 1px solid var(--background-color);
+    padding: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.open {
+    display: block;
+}

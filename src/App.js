@@ -1,10 +1,10 @@
 import './App.css';
-import Spinner from './components/FeedBack/Spinner/Spinner';
+import Accordion from './components/Display/Accordion/Accordion';
 
 function App() {
   return (
     <div className="App">
-      <Spinner />
+      <Accordion/>
     </div>
   );
 }

@@ -1,0 +1,62 @@
+.tree-diagram ul {
+    display: flex;
+    position: relative;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.tree-diagram ul ul::before {
+    border-right: 1px solid #d1d5db;
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 50%;
+
+    height: 1rem;
+    width: 50%;
+}
+
+.tree-diagram li {
+    padding: 1rem 0.5rem 0rem 0.5rem;
+    position: relative;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tree-diagram li::before {
+    border-right: 1px solid #d1d5db;
+    border-top: 1px solid #d1d5db;
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 50%;
+
+    height: 1rem;
+    width: 50%;
+}
+
+.tree-diagram li::after {
+    border-top: 1px solid #d1d5db;
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50%;
+}
+
+.tree-diagram li:first-child::before,
+.tree-diagram li:last-child::after {
+    border-top: none;
+}
+
+li.tree-diagram__root::before {
+    border-right: none;
+}
