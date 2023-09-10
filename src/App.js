@@ -1,10 +1,10 @@
 import './App.css';
-import Spinner from './components/FeedBack/Spinner/Spinner';
+import FoldStructure from './components/Display/FoldStructure/FoldStructure';
 
 function App() {
   return (
     <div className="App">
-      <Spinner />
+      <FoldStructure/>
     </div>
   );
 }
