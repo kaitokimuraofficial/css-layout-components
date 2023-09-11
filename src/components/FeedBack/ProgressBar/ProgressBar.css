@@ -1,0 +1,17 @@
+.progress-bar {
+    background-color: #d1d5db;
+
+    border-radius: 9999px;
+    padding: 0.25rem;
+}
+
+.progress-bar-progress {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    background-color: #3b82f6;
+    color: #fff;
+
+    border-radius: 9999px;
+}

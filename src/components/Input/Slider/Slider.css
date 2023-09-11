@@ -1,0 +1,33 @@
+:root {
+    --color1: #d1d5db;
+    --background-color: #3b82f6;
+}
+
+.slider {
+    align-items: center;
+    display: flex;
+
+    height: 2rem;
+    width: 10rem;
+}
+
+.slider-left {
+    height: 2px;
+
+    background-color: var(--color1);
+}
+
+.slider-circle {
+    height: 2rem;
+    width: 2rem;;
+    border-radius: 9999px;
+
+    background-color: var(--background-color);
+}
+
+.slider-right {
+    flex: 1;
+    height: 2px;
+
+    background-color: var(--color1);
+}

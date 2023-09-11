@@ -1,0 +1,47 @@
+.modalWrapper {
+    position: relative;
+
+    height: 400px;
+    width: 400px;
+}
+
+.outbtn {
+    position: absolute;
+
+    top: 20%;
+    left: 10%;
+}
+
+.modalBackground {
+    display: none;
+}
+
+.modalBackground .open {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+
+    z-index: 2;
+}
+
+.modal-inner {
+    display: none;
+}
+
+
+.modal-inner .open {
+    display: flex;
+    position: absolute;
+    
+    height: 300px;
+    width: 300px;
+    
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    background-color: rgb(185, 213, 237);
+    z-index: 3;
+}
