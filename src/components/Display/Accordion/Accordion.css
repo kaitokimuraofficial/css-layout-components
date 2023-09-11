@@ -1,55 +1,101 @@
-:root {
-    --background-color: #d1d5db;
-}
-
-button {
-    border: transparent;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-}
-
-.accordion {
+.wrapper {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 1.5rem;
 }
 
-.accordion-item {
-    border: 1px solid var(--background-color);
-    border-radius: 1rem;
+details {
+    border: 1px solid #d2beff;
+    border-radius: 5px;
+    width: 30rem;
 }
 
-.accordion-header {
-    align-items: center;
+summary {
     display: flex;
-
-    cursor: pointer;
-    padding: 16px;
+    justify-content: center;
 }
 
-.accordion-toggle {
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: var(--background-color);
-    border-radius: 50%;
-    margin-right: 12px;
-}
-
-.accordion-title {
-    flex: 1;
-}
-
-.accordion-content {
-    border-top: 1px solid var(--background-color);
-    padding: 16px;
-}
-
-.hide {
+summary::-webkit-details-marker {
     display: none;
 }
 
-.open {
-    display: block;
+.summary-inner {
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    font-weight: bold;
+    color: #002255;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1.5rem;
+    transform-origin: center 43%;
+    transition: transform 0.8s;
+}
+
+details[open] .icon {
+    transform: rotate(180deg);
+}
+
+
+.content {
+    background-color: #f0f2ff;
+    padding: 24px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+details[open] .content {
+    animation: fadeIn 1.0s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes close-animation {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes open-animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 1070px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 760px) {
+    .wrapper {
+        width: 100%;
+    }
 }

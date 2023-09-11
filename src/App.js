@@ -1,10 +1,10 @@
 import './App.css';
-import Accordion from './components/Display/Accordion/Accordion';
+import Slider from './components/Input/Slider/Slider';
 
 function App() {
   return (
     <div className="App">
-      <Accordion/>
+      <Slider />
     </div>
   );
 }

@@ -1,0 +1,63 @@
+.circular-navigation-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    height: 8rem;
+    width: 8rem;
+}
+
+.circular-navigation {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+}
+
+.circular-navigation__circle {
+    position: absolute;
+    top: 0;
+
+    transform: rotate(var(--circular-navigation__circle-degree)) translateX(-3rem);
+    
+    height: 2rem;
+    width: 2rem;
+
+    background-color: #d1d5db;
+    border-radius: 9999px;
+}
+
+.circular-navigation__content {
+    transform: rotate(var(--circular-navigation__content-degree));
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.circular-navigation__circle--1 {
+    --circular-navigation__circle-degree: 0deg;
+    --circular-navigation__content-degree: -0deg;
+}
+.circular-navigation__circle--2 {
+    --circular-navigation__circle-degree: 60deg;
+    --circular-navigation__content-degree: -60deg;
+}
+.circular-navigation__circle--3 {
+    --circular-navigation__circle-degree: 120deg;
+    --circular-navigation__content-degree: -120deg;
+}
+.circular-navigation__circle--4 {
+    --circular-navigation__circle-degree: 180deg;
+    --circular-navigation__content-degree: -180deg;
+}
+.circular-navigation__circle--5 {
+    --circular-navigation__circle-degree: 240deg;
+    --circular-navigation__content-degree: -240deg;
+}
+.circular-navigation__circle--6 {
+    --circular-navigation__circle-degree: 300deg;
+    --circular-navigation__content-degree: -300deg;
+}
